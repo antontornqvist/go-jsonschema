@@ -66,7 +66,7 @@ func (v *nullTypeValidator) generate(out *codegen.Emitter) {
 
 	indexes := make([]string, v.arrayDepth)
 
-	for i := range v.arrayDepth {
+	for i := 0; i < v.arrayDepth; i++ {
 		index := fmt.Sprintf("i%d", i)
 		indexes[i] = index
 		out.Printlnf(`for %s := range %s {`, index, value)
@@ -87,7 +87,7 @@ func (v *nullTypeValidator) generate(out *codegen.Emitter) {
 	out.Indent(-1)
 	out.Printlnf("}")
 
-	for range v.arrayDepth {
+	for i := 0; i < v.arrayDepth; i++ {
 		out.Indent(-1)
 		out.Printlnf("}")
 	}
