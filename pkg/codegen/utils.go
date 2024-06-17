@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/atombender/go-jsonschema/pkg/schemas"
+	"github.com/antontornqvist/go-jsonschema/pkg/schemas"
 )
 
 var (
@@ -75,7 +75,7 @@ func PrimitiveTypeFromJSONSchemaType(jsType, format string, pointer bool) (Type,
 					QualifiedName: "types",
 					Imports: []Import{
 						{
-							QualifiedName: "github.com/atombender/go-jsonschema/pkg/types",
+							QualifiedName: "github.com/antontornqvist/go-jsonschema/pkg/types",
 						},
 					},
 				},
@@ -90,7 +90,7 @@ func PrimitiveTypeFromJSONSchemaType(jsType, format string, pointer bool) (Type,
 					QualifiedName: "types",
 					Imports: []Import{
 						{
-							QualifiedName: "github.com/atombender/go-jsonschema/pkg/types",
+							QualifiedName: "github.com/antontornqvist/go-jsonschema/pkg/types",
 						},
 					},
 				},

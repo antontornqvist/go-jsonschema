@@ -9,7 +9,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/sanity-io/litter"
 
-	"github.com/atombender/go-jsonschema/pkg/codegen"
+	"github.com/antontornqvist/go-jsonschema/pkg/codegen"
 )
 
 type validator interface {
