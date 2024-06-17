@@ -78,7 +78,7 @@ func (e *Emitter) Newline() {
 
 func (e *Emitter) checkIndent() {
 	if e.start {
-		for range e.indent {
+		for i := uint(0); i < e.indent; i++ {
 			e.sb.WriteRune('\t')
 		}
 
